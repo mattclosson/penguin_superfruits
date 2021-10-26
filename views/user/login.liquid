@@ -1,0 +1,12 @@
+{% layout "layout.liquid" %}
+{% block content %}
+    <h1>Login</h1>
+    <form action="/user/login" method="POST">
+        <fieldset>
+            <legend>New User</legend>
+            <label>Username: <input type="text" name="username" required /></label>
+            <label>Password: <input type="password" name="password" required /></label>
+            <input type="submit" value="Create Account" />
+        </fieldset>
+    </form>
+{% endblock %}
